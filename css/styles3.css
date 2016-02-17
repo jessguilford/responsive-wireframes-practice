@@ -15,6 +15,10 @@ h1, h2, h3, h4 {
 
 /* end testing */
 
+.brand {
+  background-color: #ffeefe;
+}
+
 .container {
   width: 90%;
   margin: auto;
@@ -60,8 +64,17 @@ p {
 /* Media Queries */
 @media screen and (min-width: 545px) {
 
-  .container {
+  .container, .brand {
     overflow: auto;
+  }
+
+  .nav-links {
+    float: right;
+    margin-top: 5px;
+  }
+
+  h3 {
+    float: left;
   }
 
   .gallery-item {
@@ -69,5 +82,12 @@ p {
     width: 48%;
     margin: 1%;
     float: left;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .gallery-item {
+    width: 23%;
+    margin 1%;
   }
 }
