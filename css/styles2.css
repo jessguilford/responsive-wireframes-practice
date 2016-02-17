@@ -1,0 +1,56 @@
+/* testing only */
+
+*:not(body):not(html) {
+  box-sizing: border-box;
+  border: 1px dashed #000;
+}
+
+.gallery-img {
+  height: 100px;
+}
+
+/* end testing */
+
+.header {
+  text-align: center;
+  color: #fff;
+  background-color: #ddd;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  background-color: #fefeef;
+  /*padding: 1.667%;*/
+}
+
+.gallery {
+  margin: 1.667%;
+}
+
+.gallery::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery-img {
+  width: 30%;
+  margin: 2% 1.667%;
+  float: left;
+}
+
+@media screen and (max-width: 800px) {
+  .gallery-img {
+    width: 44%;
+    margin: 3%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery-img {
+    width: 94%;
+    margin: 3%;
+    float: none;
+  }
+}
